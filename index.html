@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1030,7 +1030,7 @@ function applyTheme(theme){
 }
 let savedTheme = null;
 try{ savedTheme = localStorage.getItem('portfolio-theme'); }catch(err){}
-applyTheme(savedTheme || 'dark');
+applyTheme(savedTheme || 'light');
 themeToggle.addEventListener('click', function(){
   const isLight = root.getAttribute('data-theme') === 'light';
   const next = isLight ? 'dark' : 'light';
